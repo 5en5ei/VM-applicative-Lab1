@@ -2,7 +2,7 @@
 <project name="minijs" default="all" basedir=".">
 	
   <property name="tatoo.dir" location="build-lib"/>
-  <property name="tatoo.jar" location="${tatoo.dir}/tatoo.jar"/>
+  <property name="tatoo.jar" location="/fr/umlv/smalljs/tatoo.jar"/>
 	
   <property name="gen-src" value="gen-src"/>
   <property name="ebnf.file" value="smalljs.ebnf"/>
@@ -12,7 +12,7 @@
   <property name="tools.package" value="fr.umlv.smalljs.grammar.tools"/>
   
   <target name="tasks">
-    <taskdef name="ebnf" classname="fr.umlv.tatoo.cc.ebnf.main.EBNFTask" classpath="${tatoo.jar}"/>
+    <taskdef name="ebnf" classname="fr.umlv.tatoo.cc.ebnf.main.EBNFTask" classpath="/fr/umlv/smalljs/tatoo.jar"/>
   </target>
   	
   <target name="gen" depends="tasks">
